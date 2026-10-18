@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Seu resultado — Ponte Digital</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
+  rel="stylesheet"
+>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#conteudo">
+  Pular para o conteúdo
+</a>
+
+<header class="site-header">
+
+  <div class="site-header__inner">
+
+    <a class="brand" href="index.html">
+
+      <span
+        class="brand__mark"
+        aria-hidden="true">
+      </span>
+
+      <span class="brand__name">
+        Ponte Digital
+      </span>
+
+    </a>
+
+    <nav
+      class="site-nav"
+      aria-label="Navegação principal">
+
+      <a href="index.html">
+        Início
+      </a>
+
+      <a href="questionario.html">
+        Fazer avaliação
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+<main id="conteudo">
+
+  <!-- CARREGANDO -->
+
+  <div
+    id="carregando"
+    class="loading-state">
+
+    <p>
+      Analisando suas respostas...
+    </p>
+
+  </div>
+
+
+  <!-- SEM RESULTADO -->
+
+  <div
+    id="sem-resultado"
+    class="error-state"
+    hidden>
+
+    <h1>
+      Não encontramos um resultado
+    </h1>
+
+    <p>
+      Parece que você chegou aqui sem responder à avaliação,
+      ou o resultado não está mais disponível nesta sessão.
+    </p>
+
+    <a
+      class="btn btn--primary"
+      href="questionario.html">
+
+      Fazer a avaliação agora
+
+    </a>
+
+  </div>
+
+
+  <!-- RESULTADO -->
+
+  <div
+    id="conteudo-resultado"
+    hidden>
+
+    <h1>
+      Seu retrato de conhecimentos
+    </h1>
+
+    <p>
+      Este resultado não é uma nota. Ele mostra como você
+      se percebe hoje em diferentes áreas e indica caminhos
+      para continuar aprendendo.
+    </p>
+
+
+    <!-- RESUMO GERAL -->
+
+    <div class="level-banner">
+
+      <p class="level-banner__label">
+        Seu panorama geral
+      </p>
+
+      <p
+        class="level-banner__value"
+        id="nivel-geral">
+
+        —
+
+      </p>
+
+    </div>
+
+
+    <!-- CATEGORIAS -->
+
+    <h2>
+      Como você está em cada área
+    </h2>
+
+    <p>
+      Cada área possui 10 perguntas. Quanto maior a pontuação,
+      maior é a sua autonomia percebida naquele tema.
+    </p>
+
+    <div
+      class="card"
+      id="lista-categorias">
+
+      <!--
+        As categorias são preenchidas pelo
+        recomendacoes.js
+      -->
+
+    </div>
+
+
+    <!-- RECOMENDAÇÕES -->
+
+    <h2 style="margin-top:2em;">
+      Caminhos para continuar aprendendo
+    </h2>
+
+    <p>
+      A partir das suas respostas, reunimos cursos,
+      materiais gratuitos e fontes oficiais que podem
+      ajudar você a desenvolver seus conhecimentos.
+    </p>
+
+    <div id="lista-recomendacoes">
+
+      <!--
+        As recomendações são preenchidas
+        pelo recomendacoes.js
+      -->
+
+    </div>
+
+
+    <!-- SERVIÇOS PÚBLICOS -->
+
+    <div
+      class="card"
+      style="margin-top:2em;">
+
+      <h2>
+        Serviços públicos e direitos
+      </h2>
+
+      <p>
+        Nesta área, também reunimos links para fontes oficiais.
+        Eles podem ajudar você a conhecer serviços digitais,
+        benefícios e direitos disponíveis à população.
+      </p>
+
+      <p>
+        Sempre confira os requisitos e as informações
+        diretamente nos canais oficiais antes de fornecer
+        seus dados ou solicitar um serviço.
+      </p>
+
+    </div>
+
+
+    <!-- BOTÕES -->
+
+    <div class="btn-row">
+
+      <a
+        class="btn btn--ghost"
+        href="questionario.html">
+
+        Refazer avaliação
+
+      </a>
+
+      <a
+        class="btn btn--primary"
+        href="index.html">
+
+        Voltar ao início
+
+      </a>
+
+    </div>
+
+  </div>
+
+</main>
+
+
+<footer class="site-footer">
+
+  Ponte Digital — projeto de extensão acadêmica voltado à redução da desigualdade digital.
+
+</footer>
+
+
+<script
+  type="module"
+  src="js/recomendacoes.js">
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Avaliação de conhecimentos — Ponte Digital</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link
+  href="https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400&family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&display=swap"
+  rel="stylesheet"
+>
+
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+<a class="skip-link" href="#conteudo">
+  Pular para o conteúdo
+</a>
+
+<header class="site-header">
+
+  <div class="site-header__inner">
+
+    <a class="brand" href="index.html">
+
+      <span
+        class="brand__mark"
+        aria-hidden="true">
+      </span>
+
+      <span class="brand__name">
+        Ponte Digital
+      </span>
+
+    </a>
+
+    <nav
+      class="site-nav"
+      aria-label="Navegação principal">
+
+      <a href="index.html">
+        Início
+      </a>
+
+      <a
+        href="questionario.html"
+        aria-current="page">
+
+        Fazer avaliação
+
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+<main id="conteudo">
+
+  <h1 id="titulo-form">
+    Vamos entender seu momento
+  </h1>
+
+  <p class="progress-label" id="progresso-texto">
+    Pergunta 1 de 30
+  </p>
+
+  <div
+    class="progress-track"
+    role="progressbar"
+    aria-labelledby="progresso-texto"
+    aria-valuemin="0"
+    aria-valuemax="30"
+    aria-valuenow="1"
+    id="barra-progresso">
+
+    <div class="progress-track__step">
+
+      <div
+        class="progress-track__step-fill"
+        id="barra-progresso-fill">
+      </div>
+
+    </div>
+
+  </div>
+
+  <form
+    id="form-questionario"
+    novalidate>
+
+    <div
+      class="card"
+      id="area-pergunta"
+      aria-live="polite">
+
+      <!--
+        A pergunta atual é inserida aqui
+        automaticamente pelo questionario.js.
+      -->
+
+    </div>
+
+    <div class="form-nav">
+
+      <button
+        type="button"
+        class="btn btn--ghost"
+        id="btn-voltar"
+        disabled>
+
+        Voltar
+
+      </button>
+
+      <span
+        class="form-status"
+        id="status-mensagem"
+        role="status"
+        aria-live="polite">
+      </span>
+
+      <button
+        type="submit"
+        class="btn btn--primary"
+        id="btn-avancar">
+
+        Próxima pergunta
+
+      </button>
+
+    </div>
+
+  </form>
+
+</main>
+
+<footer class="site-footer">
+
+  Ponte Digital — projeto de extensão acadêmica voltado à redução da desigualdade digital.
+
+</footer>
+
+<script
+  type="module"
+  src="js/firebase-config.js">
+</script>
+
+<script
+  type="module"
+  src="js/questionario.js">
+</script>
+
+</body>
+</html>
